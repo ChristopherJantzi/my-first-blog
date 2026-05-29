@@ -4,6 +4,9 @@ from django.utils import timezone
 
 
 class Post(models.Model):
+    '''
+        See tutorial page on "Django Models" for review
+    '''
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     # Add a sub-field here for a sub-title?
