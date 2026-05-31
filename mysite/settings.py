@@ -8,6 +8,35 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
+
+
+
+
+Note from Chris:
+
+TO DEPLOY need to . . . 
+
+update github with what's local:
+    In your local terminal, in the directory houseing your .git folder:
+
+        git pull (if you need to reconcile what's up on github with what's local)
+        git status (let's you know what's changed since the last commit)
+        git add . (adds the entire directory again, all the stuff that's changed)
+        git commit -m "My comment here" (let's you prep a commit and add a comment)
+        git push (pushes the commit to github)
+
+    add commit and push will do the work. Use pull if you think something's changed (probably good to do that regularly anyway).
+
+    Status will show red if they haven't been prepped for a commit, green if they'll be added with you type commit
+
+update pythonanywhere with what's on github
+    In the bash shell on pythonanywhere
+        Make sure you're in your site's directory (mine is https://decoherentdoc.pythonanywhere.com)
+        git pull
+
+    Can verify files updated on the files section
+
+    need to go to "Web" and press "Reload" for your site
 """
 
 from pathlib import Path
